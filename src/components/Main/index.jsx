@@ -7,7 +7,7 @@ import Skeleton from "@mui/material/Skeleton";
 const Main = () => {
   return (
     <>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Box
           sx={{
             bgcolor: "#fff",
