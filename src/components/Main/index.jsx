@@ -16,6 +16,7 @@ import {
   BtnWrap,
   Btn,
 } from "./MainElements";
+import { useMediaQuery } from "@mui/material";
 
 const Main = () => {
   return (
@@ -23,16 +24,15 @@ const Main = () => {
       <Box
         sx={{
           background: "#ff414d",
-          "& @media screen and (max-width: 768px)": {
-            padding: "100px 0",
-          },
         }}
       >
         <Container
           maxWidth="lg"
           sx={{
             height: "100vh",
-            flexGrow: 1,
+            ["@media screen and (max-width: 768px)"]: {
+              height: " ",
+            },
           }}
         >
           <InfoWrapper>
