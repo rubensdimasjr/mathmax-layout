@@ -51,7 +51,12 @@ const Main = () => {
               </Column1>
               <Column2>
                 <ImgWrap>
-                  <Img src="/src/images/image1.svg" alt="School" />
+
+                  <Img
+                    src="src/components/Main/images/image1.svg"
+                    alt="School"
+                  />
+
                 </ImgWrap>
               </Column2>
             </InfoRow>
