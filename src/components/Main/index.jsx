@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import laptopSchool from "../../images/image1.svg";
 import {
   InfoWrapper,
   InfoRow,
@@ -51,7 +52,7 @@ const Main = () => {
               </Column1>
               <Column2>
                 <ImgWrap>
-                  <Img src="../images/image1.svg" alt="School" />
+                  <Img src={laptopSchool} alt="laptopSchool" />
                 </ImgWrap>
               </Column2>
             </InfoRow>
