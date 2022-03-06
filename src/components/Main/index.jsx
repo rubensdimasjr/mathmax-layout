@@ -50,14 +50,7 @@ const Main = () => {
                 </TextWrapper>
               </Column1>
               <Column2>
-                <ImgWrap>
-
-                  <Img
-                    src="src/components/Main/images/image1.svg"
-                    alt="School"
-                  />
-
-                </ImgWrap>
+                <ImgWrap></ImgWrap>
               </Column2>
             </InfoRow>
           </InfoWrapper>
