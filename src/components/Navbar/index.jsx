@@ -22,7 +22,7 @@ const Navbar = () => {
           position: "sticky",
           top: 0,
           zIndex: 2,
-          "& @media screen and (max-width: 960px)": {
+          ["@media screen and (max-width: 960px)"]: {
             transition: "0.8s all ease",
           },
         }}

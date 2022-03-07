@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import Main from "./components/Main";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Main />
+      <HeroSection />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InfoWrapper = styled.div`
+export const HeroWrapper = styled.div`
   display: grid;
   /*   border: 1px solid #333; */
   z-index: 1;
@@ -13,7 +13,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
-export const InfoRow = styled.div`
+export const HeroRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -24,19 +24,19 @@ export const InfoRow = styled.div`
   }
 `;
 
-export const Column1 = styled.div`
+export const HeroColumn1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
 
-export const TextWrapper = styled.div`
+export const HeroTextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
 `;
 
-export const TopLine = styled.p`
+export const HeroTopLine = styled.p`
   color: #fff;
   font-size: 16px;
   line-height: 16px;
@@ -46,7 +46,7 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
 `;
 
-export const Heading = styled.h1`
+export const HeroHeading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
@@ -57,7 +57,7 @@ export const Heading = styled.h1`
   }
 `;
 
-export const Subtitle = styled.p`
+export const HeroSubtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
@@ -65,12 +65,12 @@ export const Subtitle = styled.p`
   color: #fff;
 `;
 
-export const BtnWrap = styled.div`
+export const HeroBtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
 `;
 
-export const Btn = styled.button`
+export const HeroBtn = styled.button`
   border-radius: 50px;
   background: #fff;
   white-space: nowrap;
@@ -93,18 +93,18 @@ export const Btn = styled.button`
   }
 `;
 
-export const Column2 = styled.div`
+export const HeroColumn2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 `;
 
-export const ImgWrap = styled.div`
+export const HeroImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
 `;
 
-export const Img = styled.img`
+export const HeroImg = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
