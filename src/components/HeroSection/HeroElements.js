@@ -19,7 +19,7 @@ export const HeroRow = styled.div`
   align-items: center;
   grid-template-areas: "col1 col2";
   @media screen and (max-width: 768px) {
-    grid-template-areas: "col1" "col2";
+    grid-template-areas: "col2" "col1";
     margin: 16px 50px 0 0;
   }
 `;
