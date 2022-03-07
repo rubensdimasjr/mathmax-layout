@@ -44,7 +44,7 @@ const AboutSection = () => {
             <Grid item md={6} sm={12}>
               <AboutRow>
                 <AboutTitleWrapper>
-                  <AboutTitle>Why Choose Us</AboutTitle>
+                  <AboutTitle>Sobre Nós</AboutTitle>
                   <AboutDescription>
                     A animi quae aliquid culpa accusantium dolorum provident
                     dolor repudiandae enim maxime, quo fuga eveniet iure
