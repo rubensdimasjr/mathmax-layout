@@ -1,13 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import "./App.css";
-import Main from "./components/Main";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Main />
+      <HeroSection />
+      <AboutSection />
     </>
   );
 }
