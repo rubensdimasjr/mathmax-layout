@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -8,11 +8,25 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { BaseButton } from "./NavbarElements";
 import Container from "@mui/material/Container";
+import "./NavbarStyle.css";
 
 const Navbar = () => {
+  const [shadowNav, setShadowNav] = useState(false);
+
+  const changeShadow = () => {
+    if (window.screenY >= 80) {
+      setShadowNav(true);
+    } else {
+      setShadowNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeShadow);
+
   return (
     <>
       <Box
+        className={shadowNav ? "active" : " "}
         sx={{
           background: "#fff",
           display: "flex",

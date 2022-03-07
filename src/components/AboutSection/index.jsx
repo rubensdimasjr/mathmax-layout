@@ -16,7 +16,7 @@ import {
 
 const AboutSection = () => {
   return (
-    <div>
+    <>
       <Box
         sx={{
           width: "100%",
@@ -102,7 +102,7 @@ const AboutSection = () => {
           </Grid>
         </Container>
       </Box>
-    </div>
+    </>
   );
 };
 
