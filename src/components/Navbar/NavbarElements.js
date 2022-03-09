@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 /* export const Nav = styled.nav`
   background: #fff;
@@ -16,13 +17,26 @@ import styled from "styled-components";
   }
 `; */
 
-export const BaseButton = styled.button`
+export const BaseButton = styled.nav`
   display: flex;
-  justify-self: center;
-  padding: 5px;
-  margin-left: 10px;
-  border-radius: 10px;
-  border: 0.5px solid #ccc;
-  background: transparent;
+  align-items: center;
+`;
+
+export const NavBtnLink = styled(LinkR)`
+  border-radius: 50px;
+  white-space: nowrap;
+  background: #fff;
+  margin-left: 12px;
+  color: #ff414d;
+  border: none;
+  display: flex;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #ff414d;
+    color: #fff;
+    outline: none;
+  }
 `;
