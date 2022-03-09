@@ -4,29 +4,14 @@ import Typography from "@mui/material/Typography";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import SettingsIcon from "@mui/icons-material/Settings";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { BaseButton } from "./NavbarElements";
+import { BaseButton, NavBtnLink } from "./NavbarElements";
 import Container from "@mui/material/Container";
-import "./NavbarStyle.css";
 
 const Navbar = () => {
-  const [shadowNav, setShadowNav] = useState(false);
-
-  const changeShadow = () => {
-    if (window.screenY >= 80) {
-      setShadowNav(true);
-    } else {
-      setShadowNav(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeShadow);
-
   return (
     <>
       <Box
-        className={shadowNav ? "active" : " "}
         sx={{
           background: "#fff",
           display: "flex",
@@ -68,13 +53,22 @@ const Navbar = () => {
             Logo
           </Typography>
           <BaseButton>
-            <GitHubIcon sx={{ color: "#ff414d" }} />
+            <NavBtnLink to="signin">
+              <AccountCircleIcon
+                sx={{
+                  fontSize: "32px",
+                }}
+              />
+            </NavBtnLink>
           </BaseButton>
           <BaseButton>
-            <AccountCircleIcon sx={{ color: "#ff414d" }} />
-          </BaseButton>
-          <BaseButton>
-            <SettingsIcon sx={{ color: "#ff414d" }} />
+            <NavBtnLink to="/">
+              <GitHubIcon
+                sx={{
+                  fontSize: "30px",
+                }}
+              />
+            </NavBtnLink>
           </BaseButton>
         </Container>
       </Box>

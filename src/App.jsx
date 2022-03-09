@@ -1,16 +1,17 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages";
+import SignInPage from "./pages/signin";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignInPage />} />
+      </Routes>
+    </Router>
   );
 }
 
