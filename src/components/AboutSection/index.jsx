@@ -31,7 +31,7 @@ const AboutSection = () => {
             height: "100%",
             marginLeft: "auto",
             marginRight: "auto",
-            padding: "60px 24px",
+            padding: "120px 24px",
           }}
         >
           <Grid container rowSpacing={1} columnSpacing={{ sm: 1, md: 2 }}>
@@ -44,7 +44,7 @@ const AboutSection = () => {
             <Grid item md={6} sm={12}>
               <AboutRow>
                 <AboutTitleWrapper>
-                  <AboutTitle>Sobre Nós</AboutTitle>
+                  <AboutTitle>Sobre nós</AboutTitle>
                   <AboutDescription>
                     A animi quae aliquid culpa accusantium dolorum provident
                     dolor repudiandae enim maxime, quo fuga eveniet iure
